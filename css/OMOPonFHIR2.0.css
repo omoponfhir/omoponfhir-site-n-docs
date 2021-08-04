@@ -1,0 +1,274 @@
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "top-banner top-banner top-banner top-banner"
+    "what-is what-is what-is what-is"
+    "walkthrough walkthrough walkthrough walkthrough"
+    "video video video video"
+    "video-text video-text video-text video-text"
+    "bot-banner bot-banner bot-banner bot-banner"
+    "footer footer footer footer";
+  grid-gap: 0px;
+}
+
+.what-is {
+  grid-area: what-is;
+}
+
+.what-is-mobile {
+  grid-area: what-is-mobile;
+}
+
+.what-is-mobile-text {
+  grid-area: what-is-mobile-text;
+}
+
+.walkthrough {
+  grid-area: walkthrough;
+}
+
+.video {
+  grid-area: video;
+}
+
+.video-text {
+  grid-area: video-text;
+}
+
+.about {
+  grid-area: about;
+}
+
+.about-mobile {
+  grid-area: about-mobile;
+}
+
+.about-mobile-text {
+  grid-area: about-mobile-text;
+}
+
+.what-is {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.what-is .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  margin-right: 25px;
+  color: white;
+  align-items: center;
+  background: var(--secondary-color);
+  font-size: 25px;
+}
+
+.what-is .right {
+  display: block;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 120px;
+  text-align: left;
+  line-height: 2;
+}
+
+.walkthrough p {
+  margin-left: 125px;
+  margin-top: 450px;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.video-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 240px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  margin: 20px;
+}
+
+.video-frame .button-frame {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 2px solid var(--secondary-color);
+}
+
+.video-frame .button-frame img {
+  margin-top: 16px;
+  margin-left: 22px;
+}
+
+.video-text p {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.video-text p em {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.what-is-mobile {
+  display: none;
+}
+
+.what-is-mobile-text {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    display: none;
+  }
+
+  .what-is {
+    display: none;
+  }
+
+  .what-is-mobile {
+    display: flex;
+    width: 180px;
+    height: 100px;
+    margin-top: 40px;
+    align-items: center;
+    justify-self: center;
+    background: var(--secondary-color);
+  }
+
+  .what-is-mobile p {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .what-is-mobile-text {
+    display: block;
+  }
+
+  .what-is-mobile-text p {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+
+  .walkthrough p {
+    margin-top: 80px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "top-banner"
+      "what-is-mobile"
+      "what-is-mobile-text"
+      "walkthrough"
+      "video"
+      "video-text"
+      "bot-banner"
+      "footer";
+  }
+}
+
+@media (max-width: 780px) {
+  .what-is {
+    display: none;
+  }
+
+  .what-is-mobile {
+    display: flex;
+    width: 180px;
+    height: 100px;
+    margin-top: 40px;
+    align-items: center;
+    justify-self: center;
+    background: var(--secondary-color);
+    justify-content: center;
+  }
+
+  .what-is-mobile p {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .what-is-mobile-text {
+    display: block;
+  }
+
+  .what-is-mobile-text p {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+
+  .walkthrough p {
+    margin-top: 80px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+  }
+ 
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "top-banner"
+      "what-is-mobile"
+      "what-is-mobile-text"
+      "walkthrough"
+      "video"
+      "video-text"
+      "bot-banner"
+      "footer";
+  }
+}
+
+@media (max-width: 680px) {
+  .main-nav .container {
+    display: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  p {
+    font-size: small;
+  }
+}

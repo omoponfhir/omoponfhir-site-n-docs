@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/OMOPonFHIR2.0.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="loader-script.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/shorter_logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/shorter_logo.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>OMOP on FHIR</title>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div id="content">
+      <nav class="main-nav">
+        <div class="container">
+          <div class="left">
+            <ul>
+              <li>
+                <a href="https://github.com/omoponfhir/omoponfhir-main"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/omoponfhir/omoponfhir-main/wiki"
+                  >Wiki</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <img
+              src="img/bullet_bullet-1.png"
+              alt=""
+              onclick="imageClick('index.html')"
+              class="homeCursor"
+            />
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="mobile-nav" id="mobile-nav-id">
+        <div class="left">
+          <!-- <input type="image" src="img/menu.png" onclick="menu()" /> -->
+        </div>
+        <div class="center">
+          <img
+            src="img/bullet_bullet-1.png"
+            alt=""
+            onclick="imageClick('index.html')"
+            class="homeCursor"
+          />
+        </div>
+        <div class="right">
+          <input type="image" src="img/menu.png" onclick="menu()" />
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu-id">
+        <ul class="mobile-menu-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+          <li>
+            <a href="https://github.com/omoponfhir/omoponfhir-main">GitHub</a>
+          </li>
+          <li>
+            <a href="https://github.com/omoponfhir/omoponfhir-main/wiki"
+              >Wiki</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function menu() {
+          var x = document.getElementById("mobile-menu-id");
+
+          if (x.className === "mobile-menu") {
+            x.className = "mobile-menu-expanded";
+          } else {
+            x.className = "mobile-menu";
+          }
+        }
+      </script>
+
+      <script>
+        function imageClick(url) {
+          window.location = url;
+        }
+      </script>
+
+      <div class="main-container">
+        <div class="top-banner">
+          <div class="container">
+            <div class="div1">
+              <img class="img1" src="https://media.giphy.com/media/HN68ScTQzLezYRAQzr/giphy.gif" alt="" />
+            </div>
+            <div class="div2">
+              <img class="img2" src="img/OMOPONFHIR_Logo-03.png" alt="" />
+              <div class="socialmed_icon">
+                <a href="https://twitter.com/omoponfhir">
+                  <img
+                    alt="Twitter"
+                    class="socialmed_images twitter"
+                    src="twitter_Twitter-blue.png"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/omoponfhir/">
+                  <img
+                    alt="LinkedIn"
+                    class="socialmed_images linkedin"
+                    src="LinkedIn_blue.png"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="div3">
+              <img class="img3" src="https://media.giphy.com/media/HN68ScTQzLezYRAQzr/giphy.gif" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="what-is">
+          <div class="left">
+            <p>What is OMOPonFHIR2.0?</p>
+          </div>
+          <div class="right">
+            <p>
+              <b>General Overview:</b>
+              <br />
+              <br />OMOPonFHIR 2.0 builds on the original version of OMOPonFHIR
+              in hopes of providing a more customizable mapping solution for a
+              broader user base.
+              <br />
+              <br />
+              <b>Architecture:</b>
+              <br />
+              <br />
+              The OMOPonFHIR 2.0 package will available in Java and .NET.
+              <br />
+              <br />
+              <b>Streamlined Configuration:</b>
+              <br />
+              <br />
+              In OMOPonFHIR 1.0, the issue of maintaining distinct mapping layers
+              between an N times N number of versions between FHIR and the OMOP
+              CDM can create some complexity for developers. With OMOPonFHIR 2.0,
+              mapping is handled through fully configurable JSON files enabling
+              far more reliability and flexibility, as well as simpler maintenance.
+            </p>
+          </div>
+        </div>
+
+        <div class="what-is-mobile">
+          <p>What is OMOPonFHIR2.0?</p>
+        </div>
+
+        <div class="what-is-mobile-text">
+          <p>
+            <b>General Overview:</b>
+            <br />
+            <br />OMOPonFHIR 2.0 builds on the original version of OMOPonFHIR
+              in hopes of providing a more customizable mapping solution for a
+              broader user base.
+            <br />
+            <br />
+            <b>Architecture:</b>
+            <br />
+            <br />
+            The OMOPonFHIR 2.0 package will available in Java and .NET.
+            <br />
+            <br />
+            <b>Streamlined Configuration:</b>
+            <br />
+            <br />
+            In OMOPonFHIR 1.0, the issue of maintaining distinct mapping layers
+              between an N times N number of versions between FHIR and the OMOP
+              CDM can create some complexity for developers. With OMOPonFHIR 2.0,
+              mapping is handled through fully configurable JSON files enabling
+              far more reliability and flexibility, as well as simpler maintenance.
+          </p>
+          <!--<p>
+                    OMOPonFHIR 2 builds upon the work done with OMOPonFHIR 1 and attempts to create more universal and customizable solutions for a broader user base.
+                    Architecture: Where OMOPonFHIR 1 is built entirely using the Java Spring framework, OMOPonFHIR 2 provides both Spring and .NET versions
+                    Streamlined Configuration: In OMOPonFHIR 1, the issue of maintaining distinct mapping layers between an N times N number of versions between FHIR and the OMOP CDM creates a burden on developers and users. With OMOPonFHIR 2, mapping is handled through fully configurable JSON files enabling far more reliability and flexibility, as well as simpler maintenance.
+            </p>-->
+        </div>
+
+        <div class="walkthrough">
+          <p>OMOPonFHIR 2.0 Walkthrough</p>
+        </div>
+
+       <!-- <div class="video">
+          <div class="video-frame">
+            <div class="button-frame">
+                    <img src="img/Polygon-1.png" alt="">
+                </div>                   
+            <video controls>
+              <source src="img/test.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>-->
+
+        <div class="video-text">
+          <p>
+             <em>OMOPonFHIR 2.0</em> coming soon, including updated features and enhanced usability!
+            updated Features and usability.
+          </p>
+        </div>
+
+        <div class="bot-banner">
+          <div class="div1">
+            <img src="img/BackGroundIllustration_Blue.png" alt="" />
+            <img src="https://media.giphy.com/media/UsVF9EAucjBN7O4BF0/giphy.gif" class="bottompage_motion" />
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="social">
+            <div class="left">
+              <div class="img-wrapper">
+                <a href="https://www.linkedin.com/company/omoponfhir/about">
+                  <img src="img/linkedin.png" alt="" />
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <a href="https://twitter.com/omoponfhir?s=20">
+                  <img src="img/twitter_Twitter.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <a href="https://forms.gle/5ARnCuKFfqA3LYyR9" target="_blank"
+              >Contact Us</a
+            >
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

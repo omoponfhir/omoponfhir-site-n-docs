@@ -1,0 +1,1199 @@
+/* TABLE OF CONTENTS 
+    1. GRID
+    2. ABOUT OMOPONFHIR
+    3. PEOPLE AND HEADERS
+    4. BREAKPOINT
+*/
+
+/* -------------- GRID --------------  */
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "top-banner top-banner top-banner top-banner"
+    "about about about about"
+    "OMOPonFHIR-Heading OMOPonFHIR-Heading OMOPonFHIR-Heading OMOPonFHIR-Heading"
+    "person-r person-r person-r person-r"
+    "person-1 person-1 person-1 person-1"
+    "person-2 person-2 person-2 person-2"
+    "person-3 person-3 person-3 person-3"
+    "person-4 person-4 person-4 person-4"
+    "person-5 person-5 person-5 person-5"
+    "person-6 person-6 person-6 person-6"
+    "person-7 person-7 person-7 person-7"
+    "OMOPonFHIR2-Heading OMOPonFHIR2-Heading OMOPonFHIR2-Heading OMOPonFHIR2-Heading"
+    "person-8 person-8 person-8 person-8"
+    "person-9 person-9 person-9 person-9"
+    "person-10 person-10 person-10 person-10"
+    "person-11 person-11 person-11 person-11"
+    "person-12 person-12 person-12 person-12"
+    "branding-Social-Media branding-Social-Media branding-Social-Media branding-Social-Media"
+    "person-13 person-13 person-13 person-13"
+    "person-14 person-14 person-14 person-14"
+    "person-15 person-15 person-15 person-15"
+    "person-16 person-16 person-16 person-16"
+    "questions questions questions questions"
+    "bot-banner bot-banner bot-banner bot-banner"
+    "footer footer footer footer";
+  grid-gap: 0px;
+}
+
+.about {
+  grid-area: about;
+}
+
+.about-mobile {
+  grid-area: about-mobile;
+}
+
+.about-mobile-text {
+  grid-area: about-mobile-text;
+}
+
+.OMOPonFHIR-Heading {
+  grid-area: OMOPonFHIR-Heading;
+}
+
+.person-r {
+  grid-area: person-r;
+}
+
+.person-1 {
+  grid-area: person-1;
+}
+
+.person-2 {
+  grid-area: person-2;
+}
+
+.person-3 {
+  grid-area: person-3;
+}
+
+.person-4 {
+  grid-area: person-4;
+}
+
+.person-5 {
+  grid-area: person-5;
+}
+
+.person-6 {
+  grid-area: person-6;
+}
+
+.person-7 {
+  grid-area: person-7;
+}
+
+.OMOPonFHIR2-Heading {
+  grid-area: OMOPonFHIR2-Heading;
+}
+
+.person-8 {
+  grid-area: person-8;
+}
+
+.person-9 {
+  grid-area: person-9;
+}
+
+.person-10 {
+  grid-area: person-10;
+}
+
+.person-11 {
+  grid-area: person-11;
+}
+
+.person-12 {
+  grid-area: person-12;
+}
+
+.branding-Social-Media {
+  grid-area: branding-Social-Media;
+}
+
+.person-13 {
+  grid-area: person-13;
+}
+
+.person-14 {
+  grid-area: person-14;
+}
+
+.person-15 {
+  grid-area: person-15;
+}
+.person-16 {
+  grid-area: person-16;
+}
+
+/* -------------- ABOUT OMOPONFHIR -------------- */
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.about .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  margin-right: 25px;
+  color: white;
+  align-items: center;
+  background: var(--secondary-color);
+  font-size: 25px;
+}
+
+.about .right {
+  margin-top: 20px;
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 140px;
+  text-align: right;
+  line-height: 2;
+}
+
+.about-mobile {
+  display: none;
+}
+
+.about-mobile-text {
+  display: none;
+}
+
+/* -------------- PEOPLE AND HEADERS --------------  */
+
+.OMOPonFHIR-Heading {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-r {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.person-r .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-r .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-r h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-1 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  margin-left: 340px;
+}
+
+.person-1 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: -10px;
+  margin-right: 340px;
+  text-align: left;
+}
+
+.person-1 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-2 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-2 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-2 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-3 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+}
+
+.person-3 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 340px;
+  text-align: left;
+}
+
+.person-3 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-4 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-4 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-4 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-5 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-5 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+}
+
+.person-5 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 600px;
+  text-align: left;
+}
+
+.person-5 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-6 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-6 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 400px;
+  text-align: right;
+}
+
+.person-6 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 200px;
+}
+
+.person-6 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+.person-7 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 130px;
+  justify-content: center;
+}
+
+.person-7 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 150px;
+}
+
+.person-7 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 550px;
+  text-align: left;
+}
+
+.person-7 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.OMOPonFHIR2-Heading {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.person-8 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.person-8 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-8 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 340px;
+}
+
+.person-8 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+.person-9 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-9 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-9 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-9 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-10 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-10 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-10 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-10 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+.person-11 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-11 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-11 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 340px;
+}
+
+.person-11 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-12 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 130px;
+  justify-content: center;
+}
+
+.person-12 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-12 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 340px;
+}
+
+.person-12 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.branding-Social-Media {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.person-13 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.person-13 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+}
+
+.person-13 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+  text-align: left;
+}
+
+.person-13 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-14 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-14 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-14 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-14 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-15 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-15 .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+}
+
+.person-15 .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+  text-align: left;
+}
+
+.person-15 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+.person-16 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.person-16 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 340px;
+  text-align: right;
+}
+
+.person-16 .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 340px;
+}
+
+.person-16 h2 {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+/* -------------- BREAKPOINT -------------- */
+
+@media (max-width: 600px) {
+  .main-nav {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .about-mobile {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    margin-top: 40px;
+    align-items: center;
+    justify-self: center;
+    background: var(--secondary-color);
+  }
+
+  .about-mobile p {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .about-mobile-text {
+    display: block;
+  }
+
+  .about-mobile-text p {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 40px;
+  }
+
+  .person-r {
+    height: 300px;
+  }
+
+  .person-1 {
+    height: 300px;
+  }
+
+  .person-2 {
+    height: 300px;
+  }
+
+  .person-3 {
+    height: 300px;
+  }
+
+  .person-4 {
+    height: 300px;
+  }
+
+  .person-5 {
+    height: 300px;
+  }
+
+  .person-6 {
+    height: 300px;
+  }
+
+  .person-7 {
+    height: 300px;
+  }
+
+  .person-8 {
+    height: 300px;
+  }
+
+  .person-9 {
+    height: 300px;
+  }
+
+  .person-10 {
+    height: 300px;
+  }
+
+  .person-11 {
+    height: 300px;
+  }
+
+  .person-12 {
+    height: 300px;
+  }
+
+  .person-13 {
+    height: 300px;
+  }
+
+  .person-14 {
+    height: 300px;
+  }
+
+  .person-15 {
+    height: 300px;
+  }
+
+  .person-16 {
+    height: 300px;
+  }
+
+  .person-r .left {
+    margin-left: 100px;
+  }
+
+  .person-r .right {
+    margin-left: -20px;
+    margin-right: 20px;
+  }
+
+  .person-r h2 {
+    font-size: 24px;
+  }
+
+  .person-1 .left {
+    margin-left: 60px;
+  }
+
+  .person-1 .right {
+    margin-left: -40px;
+    margin-right: 100px;
+  }
+
+  .person-1 h2 {
+    font-size: 24px;
+  }
+
+  .person-2 .left {
+    margin-left: 60px;
+  }
+
+  .person-2 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-2 h2 {
+    font-size: 24px;
+  }
+
+  .person-3 .left {
+    margin-left: -10px;
+  }
+
+  .person-3 .right {
+    margin-left: -60px;
+    margin-right: 20px;
+  }
+
+  .person-3 h2 {
+    font-size: 24px;
+  }
+
+  .person-4 .left {
+    margin-left: 60px;
+  }
+
+  .person-4 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-4 h2 {
+    font-size: 24px;
+  }
+
+  .person-5 .left {
+    margin-left: -30px;
+  }
+
+  .person-5 .right {
+    margin-left: -60px;
+    margin-right: 20px;
+  }
+
+  .person-5 h2 {
+    font-size: 24px;
+  }
+
+  .person-6 .left {
+    margin-left: 60px;
+  }
+
+  .person-6 .right {
+    margin-left: -60px;
+    margin-right: -10px;
+  }
+
+  .person-6 h2 {
+    font-size: 24px;
+  }
+
+  .person-7 .left {
+    margin-left: -30px;
+  }
+
+  .person-7 .right {
+    margin-left: -60px;
+    margin-right: 20px;
+  }
+
+  .person-7 h2 {
+    font-size: 24px;
+  }
+
+  .person-8 .left {
+    margin-left: -20px;
+  }
+
+  .person-8 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-8 h2 {
+    font-size: 24px;
+  }
+
+  .person-9 .left {
+    margin-left: 60px;
+  }
+
+  .person-9 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-9 h2 {
+    font-size: 24px;
+  }
+
+  .person-10 .left {
+    margin-left: -10px;
+  }
+
+  .person-10 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-10 h2 {
+    font-size: 24px;
+  }
+
+  .person-11 .left {
+    margin-left: 60px;
+  }
+
+  .person-11 .right {
+    margin-left: -40px;
+    margin-right: 10px;
+  }
+
+  .person-11 h2 {
+    font-size: 24px;
+  }
+
+  .person-12 .left {
+    margin-left: 60px;
+  }
+
+  .person-12 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-12 h2 {
+    font-size: 24px;
+  }
+
+  .person-13 .left {
+    margin-left: 20px;
+  }
+
+  .person-13 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-13 h2 {
+    font-size: 24px;
+  }
+
+  .person-14 .left {
+    margin-left: 60px;
+  }
+
+  .person-14 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-14 h2 {
+    font-size: 24px;
+  }
+
+  .person-15 .left {
+    margin-left: -20px;
+  }
+
+  .person-15 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-15 h2 {
+    font-size: 24px;
+  }
+
+  .person-16 .left {
+    margin-left: 60px;
+  }
+
+  .person-16 .right {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+  .person-16 h2 {
+    font-size: 24px;
+  }
+
+  .questions {
+    justify-content: center;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "top-banner"
+      "about-mobile"
+      "about-mobile-text"
+      "OMOPonFHIR-Heading"
+      "person-r"
+      "person-1"
+      "person-2"
+      "person-3"
+      "person-4"
+      "person-5"
+      "person-6"
+      "person-7"
+      "OMOPonFHIR2-Heading"
+      "person-8"
+      "person-9"
+      "person-10"
+      "person-11"
+      "person-12"
+      "branding-Social-Media"
+      "person-13"
+      "person-14"
+      "person-15"
+      "person-16"
+      "questions"
+      "bot-banner"
+      "footer";
+  }
+}

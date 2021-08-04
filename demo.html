@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>OMOP on FHIR</title>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="left">
+                <ul>
+                    <li><a href="https://github.com/omoponfhir/omoponfhir-main">GitHub</a></li>
+                    <li><a href="https://github.com/omoponfhir/omoponfhir-main/wiki">Wiki</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <img src="img/bullet_bullet-1.png" alt="" onclick="imageClick('index.html')">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a class="inactive" href="about.html">About</a></li>
+                    <li><a class="inactive" href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+                    <li><a class="active" href="demo.html">Demo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <nav class="mobile-nav" id="mobile-nav-id">
+        <div class="left">
+            <!-- <input type="image" src="img/menu.png" onclick="menu()" /> -->
+        </div>
+        <div class="center">
+            <img src="img/bullet_bullet-1.png" alt="" onclick="imageClick('index.html')">
+        </div>
+        <div class="right">
+            <input type="image" src="img/menu.png" onclick="menu()" />
+        </div>
+    </nav>
+    
+    <div class="mobile-menu" id="mobile-menu-id">
+        <ul class = mobile-menu-list>
+            <li><a href="about.html">About</a></li>
+            <li><a href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="https://github.com/omoponfhir/omoponfhir-main">GitHub</a></li>
+            <li><a href="https://github.com/omoponfhir/omoponfhir-main/wiki">Wiki</a></li>
+    </ul>
+    </div>
+    
+    <script>
+    function menu() {
+        var x = document.getElementById("mobile-menu-id");
+    
+        if (x.className === "mobile-menu") {
+            x.className = "mobile-menu-expanded";
+        } else {
+            x.className = "mobile-menu";
+        }
+    }
+    </script>
+    
+    <script>
+    function imageClick(url) {
+        window.location = url;
+    }
+    </script>
+
+    <div class="main-container">
+        <div class="top-banner">
+            <div class="container">
+                <div class = div1>
+                    <img class="img1" src="img/BackgroundIllustration_Red.png" alt="">
+                </div>
+                <div class = div2>
+                    <img class="img2" src="img/OMOPONFHIR_Logo-03.png" alt="">
+                </div>
+                <div class = div3>
+                    <img class="img3" src="img/BackgroundIllustration_Red.png" alt="">    
+                </div>
+            </div>
+        </div>
+
+        <div class="video-1-2">
+            <div class="left">
+                <div class="video-frame">  
+                    <video controls>
+                        <source src="img/test.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>                        
+                </div>
+                <p>Installation Case 1</p>
+            </div>
+            <div class="right">
+                <div class="video-frame">                    
+                    <video controls>
+                        <source src="img/test.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>                        
+                </div>
+                <p>Installation Case 2</p>
+            </div>
+        </div>
+
+        <div class="video-1-2-left">
+            <div class="video-frame">  
+                <video controls>
+                    <source src="img/test.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>                        
+            </div>
+            <p>Installation Case 1</p>
+        </div>
+
+        <div class="video-1-2-right">
+            <div class="video-frame">                    
+                <video controls>
+                    <source src="img/test.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>                        
+            </div>
+            <p>Installation Case 2</p>
+        </div>
+
+        <div class="video-3-4">
+            <div class="left">
+                <div class="video-frame">                                        
+                    <video controls>
+                        <source src="img/test.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>                        
+                </div>
+                <p>Installation Case 3</p>
+            </div>
+            <div class="right">
+                <div class="video-frame">                    
+                    <video controls>
+                        <source src="img/test.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>                        
+                </div>
+                <p>Installation Case 4</p>
+            </div>
+        </div>
+
+        <div class="video-3-4-left">
+            <div class="video-frame">                                        
+                <video controls>
+                    <source src="img/test.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>                        
+            </div>
+            <p>Installation Case 3</p>
+        </div>
+
+        <div class="video-3-4-right">
+            <div class="video-frame">                    
+                <video controls>
+                    <source src="img/test.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>                        
+            </div>
+            <p>Installation Case 4</p>
+        </div>
+
+        <div class="help">
+            <p>Need Some More Help?</p>
+        </div>
+
+        <!--<div class="bullet-blue">
+            <img src="img/bullet_blue-4.png" alt="">
+            <img src="img/bullet_blue-4.png" alt="">
+            <img src="img/bullet_blue-4.png" alt="">
+            <img src="img/bullet_blue-4.png" alt="">
+        </div>-->
+
+        <div class=icon-row-1>
+            <div class="container">                
+                <img src="img/interoperability.png" alt="">    
+            </div>
+            <div class="container">                
+                <img src="img/Medical_System_Medical_System.png" alt="">    
+            </div>
+            <div class="container">                
+                <img src="img/population.png" alt="">    
+            </div>
+            <div class="container">                
+                <img src="img/Analytics_Analytics.png" alt="">    
+            </div>
+            <div class="container">                
+                <img src="img/Mobile_Mobile.png" alt="">    
+            </div>
+            <div class="container">                
+                <img src="img/mapping_mapping.png" alt="">    
+            </div>
+        </div>
+
+        <div class="mappings-1">
+            <div class="mappings-left">                
+                <img src="img/map_red-1.png" alt="">    
+            </div>
+            <div class="mappings-right">                
+                <p><b>Mappings:</b> The largest barrier to leveraging FHIR and OMOP CDM together lies in the mapping between them. A one to one mapping is impossible, and there are many cases with a single FHIR Resource may map to multiple tables or columns within OMOP CDM, and sometimes vice versa. Mapping performed by OMOPonFHIR takes this into account, and provides a robust approach leveraging years of experience and user feedback.</p>
+            </div>
+        </div>
+
+        <div class="mappings-2">
+            <div class="mappings-left">                
+                <img src="img/map_blue-1.png" alt="">    
+            </div>
+            <div class="mappings-right">
+                <p><b>Standard Deployment:</b> As a Spring based application, OMOPonFHIR is built into a Java Web Application Resource (WAR) file. In order to build the WAR, users will need to select their desired versions of FHIR and the OMOP CDM and configure the Maven pom.xml configuration file to reflect the selected versions and the appropriate mapping layer in turn. For example, in FHIR R4 to OMOP CDM v6.0, the FHIR R4 server layer along with the OMOP CDM v.6.0 database layer must be specified, as well as the FHIR R4 to OMOP CDM v6.0 specific mapping layer. Once built, OMOPonFHIR can be deployed in any environment which supports WARs, predominantly through an Apache Tomcat server directly. An OMOP CDM database must be provided separately. For more information on configuration, please see the OMOPonFHIR repositories.</p>
+            </div>
+        </div>
+
+        <div class="mappings-3">
+            <div class="mappings-left">                
+                <img src="img/map_orange-2.png" alt="">    
+            </div>
+            <div class="mappings-right">                
+                <p><b>Docker Deployment:</b> To support environments which allow Docker containers, a Dockerfile is included with OMOPonFHIR. This allows the deployment of OMOPonFHIR through Docker directly or anywhere in which Docker images may be run, such as through Kubernetes. The Maven build process is handled within the container, requiring only version based component configuration to be made in the Maven pom.xml and environment variables to be provided through the Dockerfile. This approach can be utilized with any OMOP CDM database, including one which is also containerized. It is recommended that when being ran directly with Docker that containers are setup with bridge networking. For more information on building and running an OMOPonFHIR image, please see the OMOPonFHIR repositories.</p>
+            </div>
+        </div>
+
+        <div class="bot-banner">
+            <div class = div1>
+                <img src="img/BackgroundIllustration_Red.png" alt="">
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="social">
+                <div class="left">   
+                     <div class="img-wrapper">
+                        <a href = "https://www.linkedin.com/company/omoponfhir/about">
+                            <img src="img/linkedin.png" alt="">
+                        </a>
+                    </div>             
+                    <div class="img-wrapper">
+                        <a href = "https://twitter.com/omoponfhir?s=20">
+                            <img src="img/twitter_Twitter.png" alt="">
+                        </a>
+                    </div>  
+                </div>    
+            </div>
+            <div class="right">
+                <a href="https://forms.gle/5ARnCuKFfqA3LYyR9">Contact Us</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

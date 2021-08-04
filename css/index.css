@@ -1,0 +1,500 @@
+/* TABLE OF CONTENTS
+    1. GRID
+    2. WHAT IS
+    3. ICON ROW
+    4. OMOP 2 FHIR
+    5. BREAKPOINTS
+    6. PUBLICATIONS LIST
+*/
+
+/* -------------- GRID -------------- */
+.main-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "top-banner top-banner top-banner top-banner"
+    "what-is what-is what-is what-is"
+    "key-comp key-comp key-comp key-comp"
+    "deploy deploy deploy deploy"
+    "map map map map"
+    "icon-row-1 icon-row-1 icon-row-1 icon-row-1"
+    "omop2fhir omop2fhir fhir2omop fhir2omop"
+    "icon-row-2 icon-row-2 icon-row-2 icon-row-2"
+    "pub pub pub pub"
+    "bot-banner bot-banner bot-banner bot-banner"
+    "footer footer footer footer";
+  grid-gap: 0px;
+}
+
+.what-is {
+  grid-area: what-is;
+}
+
+.what-is-mobile {
+  grid-area: what-is-mobile;
+}
+
+.what-is-mobile-text {
+  grid-area: what-is-mobile-text;
+}
+
+.key-comp {
+  grid-area: key-comp;
+}
+
+.deploy {
+  grid-area: deploy;
+}
+
+.map {
+  grid-area: map;
+}
+
+.icon-row-1 {
+  grid-area: icon-row-1;
+}
+
+.omop2fhir {
+  grid-area: omop2fhir;
+}
+
+.fhir2omop {
+  grid-area: fhir2omop;
+}
+
+.icon-row-2 {
+  grid-area: icon-row-2;
+}
+
+.pub {
+  grid-area: pub;
+}
+
+/* -------------- WHAT IS -------------- */
+.what-is {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.what-is .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  margin-right: 25px;
+  color: white;
+  align-items: center;
+  background: var(--secondary-color);
+  font-size: 25px;
+}
+
+.what-is .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 120px;
+  text-align: right;
+  line-height: 2;
+}
+
+.what-is-mobile {
+  display: none;
+}
+
+.what-is-mobile-text {
+  display: none;
+}
+
+.key-comp {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.key-comp .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  margin-left: 200px;
+  padding-right: 10px;
+}
+
+.key-comp .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 180px;
+  text-align: left;
+  line-height: 2;
+}
+
+.deploy {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.deploy .left {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 80px;
+  text-align: right;
+  line-height: 2;
+}
+
+.deploy .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  margin-right: 40px;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.map .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  margin-left: 200px;
+  padding-right: 10px;
+}
+
+.map .right {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-right: 180px;
+  text-align: left;
+  line-height: 2;
+}
+
+.iconHome {
+  max-width: 100%;
+  max-height: 150px;
+  width: 150px;
+  flex: 2;
+  padding: 10px;
+}
+
+/* -------------- ICON ROW -------------- */
+
+.icon-row-1 {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background: #ebebeb;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon-row-1 .container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-row-1 img {
+  width: 100px;
+}
+
+.icon-row-2 {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background: #ebebeb;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon-row-2 .container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-row-2 img {
+  width: 100px;
+  height: 100px;
+}
+
+/* -------------- OMOP 2 FHIR -------------- */
+
+.omop2fhir img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.omop2fhir h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.omop2fhir p {
+  margin: 40px;
+  margin-left: 60px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.fhir2omop img {
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.fhir2omop h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.fhir2omop p {
+  margin: 40px;
+  margin-right: 60px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.pub h2 {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*-------------- BREAKPOINTS -------------- */
+@media (max-width: 680px) {
+  .main-nav {
+    display: none;
+  }
+
+  .what-is {
+    display: none;
+  }
+
+  .omop2fhir p {
+    margin: 40px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+
+  .fhir2omop p {
+    margin: 40px;
+    text-align: justify;
+  }
+
+  .icon-row-1 {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background: #ebebeb;
+  }
+
+  .icon-row-1 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-row-2 {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background: #ebebeb;
+  }
+
+  .icon-row-2 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .what-is-mobile {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    margin-top: 40px;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .what-is-mobile p {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  .what-is-mobile-text {
+    display: block;
+  }
+
+  .what-is-mobile-text p {
+    display: inline-block;
+    margin: 20px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .key-comp .left {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .key-comp .right {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .deploy {
+    height: 160px;
+  }
+
+  .deploy .left {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .deploy .right {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .map .left {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .map .right {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .omop2fhir p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .fhir2omop p {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .main-container {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "top-banner"
+      "what-is-mobile"
+      "what-is-mobile-text"
+      "key-comp"
+      "deploy"
+      "map"
+      "icon-row-1"
+      "omop2fhir"
+      "fhir2omop"
+      "icon-row-2"
+      "pub"
+      "bot-banner"
+      "footer";
+  }
+}
+
+/* -------------- PUBLICATIONS LIST -------------- */
+.publication-color {
+  color: #b64025;
+}
+
+.publication-list {
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 100px 0px 100px;
+  list-style: none;
+}
+
+.pub-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--gray);
+  z-index: 1;
+  transition: all 0.2s;
+
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.pub-link::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: all 0.15s;
+  z-index: -1;
+}
+
+.pub-link.shutter.half::after {
+  height: 1px;
+  background: #ed6623;
+}
+.pub-link.shutter.half:hover {
+  color: black;
+}
+.pub-link.shutter.half:hover::after {
+  height: 40%;
+}

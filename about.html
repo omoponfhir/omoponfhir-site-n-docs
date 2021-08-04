@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="loader-script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/shorter_logo.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/shorter_logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/shorter_logo.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>OMOP on FHIR</title>
+  </head>
+  <body>
+   <div id="loader"></div>
+    <div id="content">
+      <nav class="main-nav">
+        <div class="container">
+          <div class="left">
+            <ul>
+              <li>
+                <a href="https://github.com/omoponfhir/omoponfhir-main"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/omoponfhir/omoponfhir-main/wiki"
+                  >Wiki</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <img
+              src="img/bullet_bullet-1.png"
+              alt=""
+              onclick="imageClick('index.html')"
+              class="homeCursor"
+            />
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="mobile-nav" id="mobile-nav-id">
+        <div class="left">
+          <!-- <input type="image" src="img/menu.png" onclick="menu()" /> -->
+        </div>
+        <div class="center">
+          <img
+            src="img/bullet_bullet-1.png"
+            alt=""
+            onclick="imageClick('index.html')"
+            class="homeCursor"
+          />
+        </div>
+        <div class="right">
+          <input type="image" src="img/menu.png" onclick="menu()" />
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu-id">
+        <ul class="mobile-menu-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="OMOPonFHIR2.0.html">OMOPonFHIR2.0</a></li>
+          <li>
+            <a href="https://github.com/omoponfhir/omoponfhir-main">GitHub</a>
+          </li>
+          <li>
+            <a href="https://github.com/omoponfhir/omoponfhir-main/wiki"
+              >Wiki</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <script>
+        function menu() {
+          var x = document.getElementById("mobile-menu-id");
+
+          if (x.className === "mobile-menu") {
+            x.className = "mobile-menu-expanded";
+          } else {
+            x.className = "mobile-menu";
+          }
+        }
+      </script>
+
+      <script>
+        function imageClick(url) {
+          window.location = url;
+        }
+      </script>
+
+      <div class="main-container">
+        <div class="top-banner">
+          <div class="container">
+            <div class="div1">
+              <img
+                class="img1"
+                src="img/BackgroundIllustration_Orange.png"
+                alt=""
+              />
+            </div>
+            <div class="div2">
+              <img class="img2" src="https://media.giphy.com/media/VVHVPd07QhCmuxs4tD/giphy.gif" alt="" />
+              <div class="socialmed_icon">
+                <a href="https://twitter.com/omoponfhir">
+                  <img
+                    alt="Twitter"
+                    class="socialmed_images twitter"
+                    src="twitter_Twitter-blue.png"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/company/omoponfhir/">
+                  <img
+                    alt="LinkedIn"
+                    class="socialmed_images linkedin"
+                    src="LinkedIn_blue.png"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="div3">
+              <img
+                class="img3"
+                src="img/BackgroundIllustration_Orange.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="left">
+            <p>The Team behind OMOPonFHIR</p>
+          </div>
+          <div class="right">
+            <p>
+              Meet Our Team! Below you will find the team members behind
+              OMOPonFHIR and OMOPonFHIR 2.0 platforms! Our mission is to improve
+              human health and medical research through innovations in the capture,
+              analysis, and delivery of data to healthcare stakeholders. The OMOPonFHIR project
+              best exemplifies this mission.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-mobile">
+          <p>About the Team behind OMOP on FHIR</p>
+        </div>
+
+        <div class="about-mobile-text">
+          <p>
+            Meet Our Team! Below you will find the team members behind
+            OMOPonFHIR and OMOPonFHIR 2.0 platforms! Our mission is to improve
+            human health and medical research through innovations in the capture,
+            analysis, and delivery of data to healthcare stakeholders. The OMOPonFHIR project
+              best exemplifies this mission.
+          </p>
+        </div>
+        <!--
+        <div class="contact-us">
+            <p>Contact Us</p>
+            <div class="inputs">
+                <input placeholder="First Name"></input>
+                <input placeholder="Last Name"></input>
+            </div>
+            <div class="inputs">
+                <input placeholder="Email"></input>
+            </div>
+            <div class="inputs">
+                <input placeholder="Message"></input>
+            </div>
+            <a>Submit</a>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeu1NekLt_qkEd-SQRcJmjOuqZ-bvzDJnviz9v5_g-GpXFg8Q/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        -->
+        <div class="OMOPonFHIR-Heading">
+          <h1><span style="color: #ed6623">OMOPonFHIR</span><br /></h1>
+        </div>
+
+         <div class="person-r">
+          <div class="left">
+            <div>
+              <h2>
+                Tia Pope <br />
+                <span style="color: #221d58">Product Manager</span>
+              </h2>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="img/Tia_Small-10.png"
+              width="300"
+              height="300"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="person-1">
+          <div class="left">
+            <img src="img/Myung_small-09.png" width="300" height="300" alt="" />
+          </div>
+          <div class="right">
+            <div>
+              <h2>
+                Myung Choi <br />
+                <span style="color: #221d58">Chief Architect</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="person-2">
+          <div class="left">
+            <div>
+              <h2>
+                Richard Star <br />
+                <span style="color: #221d58">OMOP CDM</span>
+              </h2>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="img/Richard-Small-13.png"
+              width="300"
+              height="300"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="person-3">
+          <div class="left">
+            <img src="img/Eric_small-07.png" width="300" height="300" alt="" />
+          </div>
+          <div class="right">
+            <div>
+              <h2>
+                Eric Soto <br />
+                <span style="color: #221d58">DevOp and Deployment</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-4">
+          <div class="left">
+            <div>
+              <h2>
+                Saul Crumpton <br /><span style="color: #221d58">
+                  OMOP CDM</span
+                >
+              </h2>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/saul_small-08.png" width="300" height="300" alt="" />
+          </div>
+        </div>
+
+        <div class="person-5">
+          <div class="left">
+            <img
+              src="img/Michael_Small-05.png"
+              width="300"
+              height="300"
+              alt=""
+            />
+          </div>
+          <div class="right">
+            <div>
+              <h2>
+                Michael Riley<br />
+                <span style="color: #221d58">Infrastructure</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-6">
+          <div class="left">
+            <div>
+              <h2>
+                Ellie Shivers <br />
+                <span style="color: #221d58">Documentation</span>
+              </h2>
+            </div>
+          </div>
+          <div class="right">
+            <img src="img/Ellie_small-12.png" width="300" height="300" alt="" />
+          </div>
+        </div>
+
+        <div class="OMOPonFHIR2-Heading">
+          <h1><span style="color: #ed6623">OMOPonFHIR2.0</span></h1>
+        </div>
+
+        <div class="person-8">
+          <div class="left">
+            <div>
+              <img src="img/Tia_Small-10.png" width="300" height="300" alt="" />
+            </div>
+          </div>
+          <div class="right">
+            <h2>
+              Tia Pope <br />
+              <span style="color: #221d58">Product Manager and Architect</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="person-9">
+          <div class="left">
+            <h2>
+              Myung Choi <br /><span style="color: #221d58">
+                Chief Architect, Java</span
+              >
+            </h2>
+          </div>
+          <div class="right">
+            <div>
+              <img
+                src="img/Myung_small-09.png"
+                width="300"
+                height="300"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="person-10">
+          <div class="left">
+            <div>
+              <img
+                src="img/Brian_Small-06.png"
+                width="300"
+                height="300"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="right">
+            <h2>
+              Brian Ritchie <br />
+              <span style="color: #221d58">Chief Architect, .NET</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="person-11">
+          <div class="left">
+            <h2>
+              Elizabeth Shivers <br />
+              <span style="color: #221d58">DevOp and Deployment</span>
+            </h2>
+          </div>
+          <div class="right">
+            <div>
+              <img
+                src="img/Ellie_small-12.png"
+                width="300"
+                height="300"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="branding-Social-Media">
+          <h1><span style="color: #ed6623">Branding <br>and Social Media</span></h1>
+        </div>
+
+        <div class="person-13">
+          <div class="left">
+            <img src="img/Tia_Small-10.png" width="300" height="300" alt="" />
+          </div>
+          <div class="right">
+            <div>
+              <h2>Tia Pope</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-14">
+          <div class="left">
+            <div>
+              <h2>Shruti Vedula</h2>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="img/Shruti_small-11.png"
+              width="300"
+              height="300"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="person-15">
+          <div class="left">
+            <img src="img/Abby_Small-04.png" width="300" height="300" alt="" />
+          </div>
+          <div class="right">
+            <div>
+              <h2>Abigail Clark</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="person-16">
+            <div class="left">
+                <div>
+                    <h2>Russell Mitchell</h2>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="img/Russell-Small-14.png"width="300" height="300" alt="">
+            </div>
+        </div>
+        <div class="bot-banner">
+          <div class="div1">
+            <img src="img/BackgroundIllustration_Yellow.png" alt="" />
+            <img src="https://media.giphy.com/media/FPWLhfGNtz1xahUGES/giphy.gif" class="bottompage_motion" />
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="social">
+            <div class="left">
+              <div class="img-wrapper">
+                <a href="https://www.linkedin.com/company/omoponfhir/about">
+                  <img src="img/linkedin.png" alt="" />
+                </a>
+              </div>
+              <div class="img-wrapper">
+                <a href="https://twitter.com/omoponfhir?s=20">
+                  <img src="img/twitter_Twitter.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <a href="https://forms.gle/5ARnCuKFfqA3LYyR9">Contact Us</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
