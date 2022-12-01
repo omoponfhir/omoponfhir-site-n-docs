@@ -1,4 +1,4 @@
-var loader;
+let loader;
 
 function loadNow(opacity) {
   if (opacity <= 0) {
