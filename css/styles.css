@@ -370,14 +370,17 @@ body {
 .footer {
   display: grid;
   grid-area: footer;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 60% 20%;
   height: 50px;
   justify-content: center;
   background: var(--secondary-color);
 }
 
 .footer .social {
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
 }
 
 .footer .img-wrapper {
@@ -403,7 +406,17 @@ body {
   align-self: center;
   justify-self: right;
 }
-
+.footer .center {
+  align-self: center;
+  justify-self: center;
+}
+.footer .center p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: medium;
+}
 .footer a {
   color: #fff;
   text-decoration: none;
